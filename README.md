@@ -27,7 +27,7 @@ O repositório foi estruturado utilizando branches específicas para cada funcio
 
 ### Features
 
-- `feat/header`
+- `feat/cabecalho`
   - Desenvolvimento do cabeçalho da página.
 
 - `feat/cursos`
@@ -36,10 +36,10 @@ O repositório foi estruturado utilizando branches específicas para cada funcio
 - `feat/sobre`
   - Desenvolvimento da seção "Sobre".
 
-- `feat/footer`
+- `feat/rodape`
   - Implementação do rodapé da aplicação.
 
-- `feat/css-style`
+- `feat/melhorar-estilo-css`
   - Responsável pela estilização visual utilizando CSS.
 
 ### Documentação
@@ -70,7 +70,3 @@ Durante o desenvolvimento do projeto, foram praticados conceitos importantes rel
 
 ---
 
-## Finalidade Educacional
-
-Este projeto possui caráter educacional e foi desenvolvido com o objetivo de demonstrar boas práticas de versionamento em projetos colaborativos.
-```
