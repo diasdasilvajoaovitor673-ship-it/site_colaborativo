@@ -1,0 +1,247 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    min-height: 800px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #38bdf8);
+    color: white;
+}
+
+/* Menu de navegação */
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #dbeafe;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 4px;
+}
+
+/* Área principal do topo */
+.hero {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    color: #e0f2fe;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #1e3a8a;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #dbeafe;
+    transform: translateY(-3px);
+}
+
+/* Conteúdo principal */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #2563eb;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Lista de cursos */
+.lista-cursos {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.lista-cursos article {
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    padding: 30px;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    text-align: center;
+    border: 1px solid #bfdbfe;
+    transition: 0.3s;
+}
+
+.lista-cursos article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.95rem;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero {
+        padding-top: 90px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 30px 25px;
+    }
+
+    .lista-cursos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+}
+
+.hero-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin: 22px 0 35px;
+    flex-wrap: wrap;
+}
+
+.hero-logos img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.hero-logos img:hover {
+    transform: translateY(-4px);
+}
